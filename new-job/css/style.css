@@ -216,13 +216,15 @@ a.slide_btn {
 }
 .watch{
   background: #228B22;
-    margin-top: -195px
+    margin-top: -195px;
+    padding: 20px;
 }
 .watch1,.watch2,.watch3,.watch4, .menu{
     color: white;
     text-align: right;
     font-size: 20px;
     transition: .5s;
+    padding: 10px;
 }
 .menu p{
     color: #ADFF2F;
@@ -251,31 +253,26 @@ a.slide_btn {
 .watch1:hover .menu{
     background: white;
     color: green;
-    padding: 30px;
     text-align: none;
 }
 .watch2:hover .menu2{
     background: white;
     color: green;
-    padding: 30px;
     text-align: none;
 }
 .watch3:hover .menu{
     background: white;
     color: green;
-    padding: 30px;
     text-align: none;
 }
 .watch4:hover .menu{
     background: white;
     color: green;
-    padding: 30px;
     text-align: none;
 }
 .watch5:hover .menu{
     background: white;
     color: green;
-    padding: 30px;
     text-align: none;
 }
 @media (max-width:997px){
