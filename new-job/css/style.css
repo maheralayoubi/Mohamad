@@ -29,6 +29,11 @@ body{
 .navbar-nav{
     padding: 20px 0px;
 }
+.navbar {
+    top: 0;
+    border-width: 0 0 1px;
+    background: white;
+}
 .navbar-nav li a{
     color: green;
     font-weight: bold;
@@ -348,14 +353,31 @@ a.slide_btn {
     padding: 15px;
     width: 300px;
 }
-.list2 h1{
-    color: white;
+.two-color {
+  /* background fallback for older browsers */
+    background: #228B22;
+    background-image: linear-gradient(
+      to right,
+      #228B22 49%,
+      #228B22 49%,
+      #228B22 65%,
+      #F8F9F9 20%
+    )
+  }
+.tube {
+    color: #228B22;
     width: 300px;
-        
+    float: right;
+    margin-right: 150px;
+}
+.row-tube{
+    padding: 40px 10px;
+    padding-left: 130px;
 }
 .list2 iframe{
-    
+    padding-top: 30px;
 }
+
 /* End of youtube*/
 /*Program Providers*/
 .providers h1{
