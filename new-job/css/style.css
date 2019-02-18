@@ -21,10 +21,11 @@ font-family: 'Lateef', cursive;*/
     box-sizing: border-box;
     font-family: 'El Messiri', sans-serif;
 }
-/*Navigation*/
-.navbar{
-    background: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10));
+body{
+    background: red;
 }
+/*Navigation*/
+
 .navbar-nav{
     padding: 20px 0px;
 }
@@ -34,6 +35,9 @@ font-family: 'Lateef', cursive;*/
     font-size: 18px;
 }
 @media (max-width:997px){
+    .navbar{
+        background: grey;
+    }
     .icon-bar{
         background: black;
     }
@@ -42,6 +46,9 @@ font-family: 'Lateef', cursive;*/
     }
     ul li{
         border-bottom: 1px white solid;
+    }
+    .navbar-nav li a{
+        color: white;
     }
 }
 /*End of navigation*/
@@ -98,6 +105,7 @@ font-family: 'Lateef', cursive;*/
   position: absolute;
   right: 0;
   text-align: center;
+    top: 430px;
 }
 
 a.slide_btn {
@@ -219,7 +227,7 @@ a.slide_btn {
     margin-top: -195px;
     padding: 20px;
 }
-.watch1,.watch2,.watch3,.watch4, .menu{
+.watch1,.watch2,.watch3,.watch4,.watch5, .menu{
     color: white;
     text-align: right;
     font-size: 20px;
@@ -234,14 +242,8 @@ a.slide_btn {
     font-size: 12px;
     margin-top: -20px;
 }
-.menu2 h4{
-    color: #ADFF2F;
-}
 .watch1,.watch2,.watch3,.watch4,.watch5,.watch6{
     margin-top: 70px;
-}
-.watch2 .menu2{
-    transition: .5s;
 }
 .watch6 p{
     color: white;
@@ -255,7 +257,7 @@ a.slide_btn {
     color: green;
     text-align: none;
 }
-.watch2:hover .menu2{
+.watch2:hover .menu{
     background: white;
     color: green;
     text-align: none;
@@ -267,13 +269,16 @@ a.slide_btn {
 }
 .watch4:hover .menu{
     background: white;
-    color: green;
+    color: #82b74b;
     text-align: none;
 }
 .watch5:hover .menu{
     background: white;
     color: green;
     text-align: none;
+}
+.watch2 h5{
+    margin: 2px;
 }
 @media (max-width:997px){
     .watch{
@@ -286,7 +291,8 @@ a.slide_btn {
 }
     .watch6 p{
         text-align: center;
-       
+        position: relative;
+        top: -70px;
     }
 }
 
@@ -348,7 +354,7 @@ a.slide_btn {
         
 }
 .list2 iframe{
-    width: 
+    
 }
 /* End of youtube*/
 /*Program Providers*/
@@ -356,6 +362,7 @@ a.slide_btn {
     color: #228B22;   
     font-weight: bold;
     text-align: right;
+    font-size: 30px;
 }
 .media-carousel 
 {
@@ -369,25 +376,29 @@ a.slide_btn {
 {
   left: -12px;
   background-image: none;
-  background: none repeat scroll 0 0 #222222;
   border: 4px solid #FFFFFF;
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width : 40px;
-  margin-top: 60px
-      
+  margin-top: 60px;
+       font-size: 50px;
+    color: black;
+}
+#media{
+    background: white;
 }
 /* Next button  */
 .media-carousel .carousel-control.right 
 {
   right: -12px !important;
   background-image: none;
-  background: none repeat scroll 0 0 #222222;
   border: 4px solid #FFFFFF;
   border-radius: 23px 23px 23px 23px;
   height: 40px;
   width : 40px;
-  margin-top: 60px
+  margin-top: 60px;
+    font-size: 50px;
+    color: black;
 }
 /* Changes the position of the indicators */
 .media-carousel .carousel-indicators 
@@ -426,12 +437,14 @@ a.slide_btn {
     font-size: 18px;
     text-align: right;
     color: darkgreen;
+  
     
 }
 .footer i{
     padding: 5px 5px;
     font-size: 20px;
     color: #82b74b;
+      cursor: pointer;
 }
 .footer p{
     font-size: 15px;
